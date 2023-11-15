@@ -15,7 +15,9 @@ import {
 import { 
   faLock, 
   faBasketShopping,
-  faCaretDown
+  faCaretDown,
+  faLeftLong,
+  faRightLong
  } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 /* add icons to the library */
@@ -28,7 +30,9 @@ library.add(
   faLock,
   faEnvelope,
   faBasketShopping,
-  faCaretDown
+  faCaretDown,
+  faLeftLong,
+  faRightLong
 )
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
