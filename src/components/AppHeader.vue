@@ -2,13 +2,15 @@
 import SocialAndLogin from './HeaderComponents/SocialAndLogin.vue';
 import SearchInputHeader from './HeaderComponents/SearchInputHeader.vue';
 import NavBar from './HeaderComponents/NavBar.vue';
+import HeroHeader from './HeaderComponents/HeroHeader.vue';
 
 export default {
 
   components: {
     SocialAndLogin,
     SearchInputHeader,
-    NavBar
+    NavBar,
+    HeroHeader
   },
 
   data() {
@@ -56,6 +58,7 @@ export default {
     <SocialAndLogin/>
     <SearchInputHeader/>
     <NavBar :navData="navData"/>
+    <HeroHeader/>
   </header>
 
 </template>
