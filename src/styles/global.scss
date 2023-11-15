@@ -1,0 +1,46 @@
+@use './partials/variables' as *;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: $blue;
+  color: $white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul,
+ol,
+menu {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+  display: inline-block;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+input {
+  outline: none;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
