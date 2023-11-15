@@ -1,6 +1,6 @@
 <template>
 
-  <section class="interactions">
+  <section class="interactions section-padding">
     <div class="container">
 
       <div class="interactions-wrap flex justify-between items-center">
@@ -45,7 +45,8 @@
 @use '../../styles/partials/variables' as *;
 
   .interactions {
-    padding: 21px 5px;
+    padding-top: 21px;
+    padding-bottom: 21px;
     font-size: 14px;
     border-bottom: 2px solid $borderBlue;
 

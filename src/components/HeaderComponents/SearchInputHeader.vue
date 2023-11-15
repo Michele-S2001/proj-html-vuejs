@@ -1,6 +1,6 @@
 <template>
 
-  <section class="section">
+  <section class="section section-padding">
     <div class="container">
       <div class="search-section flex justify-between">
         <div class="logo">
@@ -21,8 +21,9 @@
 
   .section {
     border-bottom: 2px solid $borderBlue;
+    padding-top: 15px;
+    padding-bottom: 40px;
     .search-section {
-      padding: 15px 5px 40px 5px;
       .search-input {
         align-self: flex-end;
         * {
