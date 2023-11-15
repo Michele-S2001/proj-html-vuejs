@@ -1,6 +1,6 @@
 <template>
 
-  <section class="interactions section-padding">
+  <section class="section section-padding">
     <div class="container">
 
       <div class="interactions-wrap flex justify-between items-center">
@@ -41,10 +41,10 @@
 
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
 
-  .interactions {
+  .section {
     padding-top: 21px;
     padding-bottom: 21px;
     font-size: 14px;
