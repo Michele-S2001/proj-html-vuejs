@@ -34,6 +34,7 @@ a {
 button {
   border: none;
   background-color: transparent;
+  color: $white;
 }
 
 input {
@@ -56,6 +57,10 @@ input {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .items-center {

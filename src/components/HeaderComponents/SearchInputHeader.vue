@@ -43,7 +43,6 @@
           padding: 0 21px;
           font-size: 14px;
           font-weight: 600;
-          color: $white;
         }
       }
     }
