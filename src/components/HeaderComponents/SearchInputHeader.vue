@@ -4,7 +4,7 @@
     <div class="container">
       <div class="search-section flex justify-between">
         <div class="logo">
-          <img src="../../../public/img/cropped-logo.png" alt="Logo">
+          <img src="../../../img/cropped-logo.png" alt="Logo">
         </div>
         <div class="search-input">
           <input type="text" placeholder="Search...">
