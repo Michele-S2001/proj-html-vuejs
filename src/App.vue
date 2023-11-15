@@ -1,6 +1,12 @@
 <script>
+import AppHeader from './components/AppHeader.vue';
 
 export default {
+  
+  components: {
+    AppHeader
+  },
+
   data() {
     return {
       message: 'ciao mega progetto'
@@ -11,16 +17,7 @@ export default {
 </script>
 
 <template>
-  
-  <h1>{{ message }}</h1>
-  
-  <!-- <font-awesome-icon :icon="['fas', 'lock']" />
-  <font-awesome-icon :icon="['fab', 'google-plus-g']" />
-  <font-awesome-icon :icon="['fab', 'instagram']" />
-  <font-awesome-icon :icon="['fab', 'linkedin-in']" />
-  <font-awesome-icon :icon="['fab', 'twitter']" />
-  <font-awesome-icon :icon="['fab', 'facebook-f']" /> -->
-
+  <AppHeader/>
 </template>
 
 <style lang="scss">

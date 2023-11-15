@@ -13,6 +13,7 @@ import {
  } from '@fortawesome/free-brands-svg-icons'
 
 import { faLock } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 /* add icons to the library */
 library.add(
   faFacebookF, 
@@ -20,7 +21,8 @@ library.add(
   faLinkedinIn, 
   faInstagram,
   faGooglePlusG,
-  faLock
+  faLock,
+  faEnvelope
 )
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

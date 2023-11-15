@@ -38,9 +38,25 @@ button {
 
 input {
   outline: none;
+  background: transparent;
+  border: none;
 }
+
+// Utility classes
 
 .container {
   max-width: 1120px;
   margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
 }
