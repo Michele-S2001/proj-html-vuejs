@@ -38,7 +38,6 @@ export default {
 @use '../../styles/partials/variables' as *;
 
   .section {
-    border-bottom: 2px solid $borderBlue;
     .navbar {
       padding: 25px 0;
       .nav-items {
