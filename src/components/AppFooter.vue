@@ -1,9 +1,11 @@
 <script>
-import MainFooter from './FooterComponents/MainFooter.vue'
+import MainFooter from './FooterComponents/MainFooter.vue';
+import PolicyAndRights from './FooterComponents/PolicyAndRights.vue';
 
 export default {
   components: {
-    MainFooter
+    MainFooter,
+    PolicyAndRights
   },
 
   data() {
@@ -19,6 +21,7 @@ export default {
 
   <footer class="page-footer">
     <MainFooter/>
+    <PolicyAndRights/>
   </footer>
 
 </template>
