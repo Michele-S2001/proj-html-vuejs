@@ -4,6 +4,7 @@ import MoviePlaylist from './MainComponents/MoviePlaylist.vue';
 import ComingSoon from './MainComponents/ComingSoon.vue';
 import MovieCatalog from './MainComponents/MovieCatalog.vue';
 import LatestNews from './MainComponents/LatestNews.vue';
+import MainForm from './MainComponents/MainForm.vue';
 
 export default {
   components: {
@@ -11,7 +12,8 @@ export default {
     MoviePlaylist,
     ComingSoon,
     MovieCatalog,
-    LatestNews
+    LatestNews,
+    MainForm
   },
 
   data() {
@@ -30,6 +32,7 @@ export default {
   <ComingSoon/>
   <MovieCatalog/>
   <LatestNews/>
+  <MainForm/>
 </template>
 
 <style lang="scss" scoped>

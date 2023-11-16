@@ -54,7 +54,6 @@ export default {
 @use '../../styles/partials/variables' as *;
 
   .news{
-    padding-bottom: 72px;
     padding-top: 72px;
 
     &__card:first-child {
