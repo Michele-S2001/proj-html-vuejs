@@ -93,7 +93,7 @@ export default {
         }
 
         span {
-          background-color: $blue;
+          background-color: $darkBlue;
           line-height: 40px;
           padding: 0 20px;
         }

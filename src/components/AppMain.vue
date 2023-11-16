@@ -1,9 +1,11 @@
 <script>
 import NewMovie from './MainComponents/NewMovie.vue';
+import MoviePlaylist from './MainComponents/MoviePlaylist.vue';
 
 export default {
   components: {
-    NewMovie
+    NewMovie,
+    MoviePlaylist
   },
 
   data() {
@@ -18,6 +20,7 @@ export default {
 
 <template>
   <NewMovie/>
+  <MoviePlaylist/>
 </template>
 
 <style lang="scss" scoped>

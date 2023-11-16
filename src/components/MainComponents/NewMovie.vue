@@ -80,7 +80,8 @@ export default {
 @use '../../styles/partials/variables' as *;
 
   .section {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     .new-movie-selectors {
       .banner {

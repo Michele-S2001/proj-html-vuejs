@@ -3,7 +3,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: $blue;
+  background-color: $darkBlue;
   color: $white;
 }
 
@@ -52,7 +52,12 @@ input {
 
 .flex {
   display: flex;
-  flex-wrap: wrap;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
 }
 
 .flex-column {
