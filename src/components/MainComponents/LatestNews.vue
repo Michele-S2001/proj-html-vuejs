@@ -13,24 +13,24 @@ export default {
   data() {
     return {
       mainNews: {
-        title: 'lorem ipsum dolor ment upsim calor veru ma come parli',
+        title: 'lorem ipsum dolor ment upsim calor',
         path: '../../../img/blog-570x570.jpg'
       },
       news: [
         {
-          title: 'lorem ipsum dolor ment upsim calor veru ma come parli',
+          title: 'lorem ipsum dolor ment upsim calor',
           path: '../../../img/blog2-300x300.jpg'
         },
         {
-          title: 'lorem ipsum dolor ment upsim calor veru ma come parli',
+          title: 'lorem ipsum dolor ment upsim calor',
           path: '../../../img/blog3-300x300.jpg'
         },
         {
-          title: 'lorem ipsum dolor ment upsim calor veru ma come parli',
+          title: 'lorem ipsum dolor ment upsim calor',
           path: '../../../img/blog4-300x300.jpg'
         },
         {
-          title: 'lorem ipsum dolor ment upsim calor veru ma come parli',
+          title: 'lorem ipsum dolor ment upsim calor',
           path: '../../../img/blog5-300x300.jpg'
         }
       ]

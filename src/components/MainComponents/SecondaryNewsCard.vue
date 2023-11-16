@@ -44,10 +44,13 @@ export default {
 
   &__body {
     position: absolute;
-    top: 30px;
-    bottom: 20px;
-    left: 0;
-    right: 0;
+    inset: 0;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    &:hover {
+      background-image: linear-gradient(to bottom, rgba($green, 0.5), transparent);
+    }
 
     .details {
       margin-top: auto;
