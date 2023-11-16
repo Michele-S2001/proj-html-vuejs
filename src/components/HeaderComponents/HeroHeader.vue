@@ -1,7 +1,7 @@
 <template>
 
   <section class="section section-padding">
-    <div class="container">
+    <div class="container-sm">
       <div class="hero flex">
         <div class="hero__introduction">
           <span>Welcome To Our Movies Site</span>
@@ -23,14 +23,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding-top: 240px;
+    padding-bottom: 240px;
     .hero {
-      padding-top: 240px;
-      padding-bottom: 240px;
       text-align: center;
+      justify-content: flex-end;
   
       &__introduction {
         max-width: 500px;
-        margin-left: 40%;
   
         .cta-more {
           background-color: $green;
