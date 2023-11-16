@@ -7,6 +7,10 @@ export default {
       default() {
         return '';
       }
+    },
+    article: {
+      type: Object,
+      required: true
     }
   }
 }
@@ -16,10 +20,10 @@ export default {
 <template>
 
   <li class="trailer flex">
-    <img src="../../../img/2-100x100.jpg" alt="">
+    <img :src="article.path">
     <div class="trailer__description flex flex-column">
-      <h5>Lorem ipsum dolor sit. Lorem, ipsum.</h5>
-      <strong class="views">324 views</strong>
+      <h5>{{ article.title }}</h5>
+      <strong class="views">{{ article.views }} views</strong>
       <div class="date flex justify-between">
         <span>February 12, 2016</span>
         <span>{{ time }}</span>

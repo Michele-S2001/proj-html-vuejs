@@ -6,6 +6,28 @@ export default {
   components: {
     AppBanner,
     TrailerCard
+  },
+
+  data() {
+    return {
+      posts: [
+        {
+          title: 'lorem ipsum dolor ment upsim calor veru ma come parli',
+          path: '../../../img/blog-100x100.jpg',
+          views: 123
+        },
+        {
+          title: 'lorem ipsum dolor ment upsim calor veru ma come parli',
+          path: '../../../img/6-100x100.jpg',
+          views: 123
+        },
+        {
+          title: 'lorem ipsum dolor ment upsim calor veru ma come parli',
+          path: '../../../img/blog2-100x100.jpg',
+          views: 123
+        }
+      ]
+    }
   }
 }
 </script>
@@ -23,7 +45,7 @@ export default {
             <span>playing 24</span>
           </div>
           <ul class="trailers-list">
-            <TrailerCard :time="'2.30.000'"/>
+            <TrailerCard v-for="post in posts" :time="'2.30.000'" :article="post"/>
           </ul>
         </div>  
       </div>
