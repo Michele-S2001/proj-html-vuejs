@@ -9,7 +9,8 @@ import {
   faTwitter, 
   faLinkedinIn, 
   faInstagram,
-  faGooglePlusG
+  faGooglePlusG,
+  faPinterest
  } from '@fortawesome/free-brands-svg-icons'
 
 import { 
@@ -32,7 +33,8 @@ library.add(
   faBasketShopping,
   faCaretDown,
   faLeftLong,
-  faRightLong
+  faRightLong,
+  faPinterest
 )
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
