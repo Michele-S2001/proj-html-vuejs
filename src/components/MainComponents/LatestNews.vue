@@ -39,14 +39,14 @@ export default {
 
 <template>
 
-  <div class="section section section-padding">
+  <section class="section section section-padding">
     <div class="container">
       <AppBanner :text="'Latest news'"/>
       <div class="news grid">
         <NewsCard class="news__card" v-for="n in news" :item="n"/>
       </div>
     </div>
-  </div>
+  </section>
 
 </template>
 
