@@ -20,7 +20,7 @@ export default {
 
   <section class="section">
     <div class="container">
-      <nav class="navbar flex justify-between">
+      <nav class="navbar flex items-center justify-between">
 
         <ul class="nav-items flex">
           <li v-for="(item, i) in data" :key="i" class="nav-item">
