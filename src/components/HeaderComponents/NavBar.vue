@@ -1,12 +1,17 @@
 <script>
+import store from '../../store';
+import NavDropDown from './NavDropDown.vue';
 
 export default {
-  props: {
-    navData: {
-      type: Array,
-      required: true
-    }
+  components: {
+    NavDropDown
   },
+
+  computed: {
+    data() {
+      return store.navData
+    },
+  }
 }
 
 </script>
@@ -18,8 +23,13 @@ export default {
       <nav class="navbar flex justify-between">
 
         <ul class="nav-items flex">
-          <li v-for="(item, i) in navData" :key="i" class="nav-item">
+          <li v-for="(item, i) in data" :key="i" class="nav-item">
             <a :href="item.link">{{ item.text }}</a>
+            <font-awesome-icon 
+              class="arrow" v-if="i < 5" 
+              :icon="['fas', 'caret-down']"
+            />
+            <NavDropDown :links="item.dropDownLinks" class="dropdown" v-if="i < 5"/>
           </li>
         </ul>
 
@@ -39,9 +49,37 @@ export default {
 
   .section {
     .navbar {
-      padding: 25px 0;
       .nav-items {
         gap: 30px;
+
+        .nav-item {
+          position: relative;
+
+          & a {
+            line-height: 60px;
+          }
+          &:hover .dropdown {
+            display: block;
+          }
+          .dropdown {
+            position: absolute;
+            top: 50px;
+            left: -10px;
+            display: none;
+          }
+          .arrow {
+            margin-left: 10px;
+          }
+
+          &:hover {
+            & a {
+              color: $green;
+            }
+            & .arrow {
+              color: $green;
+            }
+          }
+        }
       }
 
       .nav-shop {

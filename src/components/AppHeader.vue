@@ -16,36 +16,6 @@ export default {
   data() {
     return {
       message: 'AppHeader.vue',
-      navData: [
-        {
-          text: 'Home',
-          link: '#'
-        },
-        {
-          text: 'Celebrity',
-          link: '#'
-        },
-        {
-          text: 'Movie',
-          link: '#'
-        },
-        {
-          text: 'Page',
-          link: '#'
-        },
-        {
-          text: 'Shop',
-          link: '#'
-        },
-        {
-          text: 'Blog',
-          link: '#'
-        },
-        {
-          text: 'Contacts Us',
-          link: '#'
-        },
-      ]
     }
   }
 }
@@ -57,7 +27,7 @@ export default {
   <header class="page-header">
     <SocialAndLogin/>
     <SearchInputHeader/>
-    <NavBar :navData="navData"/>
+    <NavBar/>
     <HeroHeader/>
   </header>
 
