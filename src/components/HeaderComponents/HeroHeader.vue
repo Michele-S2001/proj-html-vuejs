@@ -38,6 +38,12 @@
           line-height: 40px;
           padding: 0 15px;
           border-radius: 18px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: $white;
+            color: $blue;
+          }
         }
         .title {
           font-size: 50px;
