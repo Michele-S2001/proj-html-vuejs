@@ -25,7 +25,22 @@ export default {
           title: 'lorem ipsum dolor ment upsim calor veru ma come parli',
           path: '../../../img/blog2-100x100.jpg',
           views: 123
-        }
+        },
+        {
+          title: 'lorem ipsum dolor ment upsim calor veru ma come parli',
+          path: '../../../img/blog-100x100.jpg',
+          views: 123
+        },
+        {
+          title: 'lorem ipsum dolor ment upsim calor veru ma come parli',
+          path: '../../../img/6-100x100.jpg',
+          views: 123
+        },
+        {
+          title: 'lorem ipsum dolor ment upsim calor veru ma come parli',
+          path: '../../../img/blog2-100x100.jpg',
+          views: 123
+        },
       ]
     }
   }
