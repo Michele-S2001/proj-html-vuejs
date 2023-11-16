@@ -95,7 +95,8 @@ export default {
       }
 
       .trailers-list {
-        overflow: auto;
+        overflow: scroll;
+        height: 100%;
       }
 
       & > * {
