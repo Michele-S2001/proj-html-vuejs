@@ -1,5 +1,3 @@
-<script></script>
-
 <template>
 
   <section class="section section-padding">

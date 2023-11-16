@@ -4,6 +4,10 @@ export default {
     movie: {
       type: Object,
       required: true
+    },
+    round: {
+      type: Boolean,
+      required: true
     }
   }
 }
@@ -12,7 +16,7 @@ export default {
 <template>
 
 <div class="card">
-  <img class="card__image" :src="movie.path">
+  <img class="card__image" :src="movie.path" :class="{rounded: round}">
   <div class="card__body flex flex-column">
     <div class="rating"><span>&starf;</span> {{ movie.rating }}/10</div>
     <div class="details">
@@ -35,14 +39,14 @@ export default {
 
 .card {
   position: relative;
-  opacity: 0.6;
   user-select: none;
   
   &__image {
     object-fit: cover;
     height: 100%;
-    border-radius: 40px;
-    
+    &.rounded {
+      border-radius: 40px;
+    }
   }
 
   &__body {

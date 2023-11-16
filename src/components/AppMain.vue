@@ -2,12 +2,14 @@
 import NewMovie from './MainComponents/NewMovie.vue';
 import MoviePlaylist from './MainComponents/MoviePlaylist.vue';
 import ComingSoon from './MainComponents/ComingSoon.vue';
+import MovieCatalog from './MainComponents/MovieCatalog.vue';
 
 export default {
   components: {
     NewMovie,
     MoviePlaylist,
-    ComingSoon
+    ComingSoon,
+    MovieCatalog
   },
 
   data() {
@@ -24,6 +26,7 @@ export default {
   <NewMovie/>
   <MoviePlaylist/>
   <ComingSoon/>
+  <MovieCatalog/>
 </template>
 
 <style lang="scss" scoped>

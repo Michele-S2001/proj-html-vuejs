@@ -69,6 +69,7 @@ export default {
         :class="{active: i === currIndex}" 
         v-for="(movie, i) in movies" 
         :movie="movie"
+        :round="true"
         class="card"/>
       </div>
     </div>
@@ -104,10 +105,14 @@ export default {
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
       padding: 100px 0;
-      .active {
-        opacity: 1;
-        transform: scale(1.1);
-        z-index: 3;
+
+      .card {
+        opacity: 0.6;
+        &.active {
+          opacity: 1;
+          transform: scale(1.1);
+          z-index: 3;
+        }
       }
     }
   }
