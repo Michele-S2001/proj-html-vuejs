@@ -49,7 +49,7 @@ export default {
 
 <template>
 
-  <section class="section section-padding">
+  <section class="section">
     <div class="container">
       <AppBanner :text="'Movie playlist'"/>
       <div class="trailers grid">

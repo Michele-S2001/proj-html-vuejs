@@ -1,6 +1,6 @@
 <template>
 
-  <section class="section section-padding">
+  <section class="section">
     <div class="container">
       <div class="search-section flex justify-between">
         <div class="logo">

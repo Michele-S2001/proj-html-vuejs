@@ -86,7 +86,7 @@ export default {
 
 <template>
 
-  <section class="section section-padding">
+  <section class="section">
     <div class="container">
       <div class="discover grid">
         <div class="discover__branch about">

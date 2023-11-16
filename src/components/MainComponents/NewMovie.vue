@@ -55,7 +55,7 @@ export default {
 
 <template>
 
-  <section class="section section-padding">
+  <section class="section">
     <div class="container">
       <div class="new-movie-selectors flex">
         <AppBanner class="banner" :text="'New Movies'"/>

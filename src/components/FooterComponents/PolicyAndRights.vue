@@ -1,6 +1,6 @@
 <template>
 
-  <div class="section section section-padding">
+  <div class="section">
     <div class="container">
       <div class="termsOfUse flex justify-between">
         <div class="termsOfUse__left flex">

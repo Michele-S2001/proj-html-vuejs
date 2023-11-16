@@ -1,6 +1,6 @@
 <template>
 
-  <section class="section section-padding">
+  <section class="section">
     <div class="container">
 
       <div class="interactions-wrap flex justify-between items-center">

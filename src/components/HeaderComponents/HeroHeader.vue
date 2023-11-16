@@ -1,6 +1,6 @@
 <template>
 
-  <section class="section section-padding">
+  <section class="section">
     <div class="container-sm">
       <div class="hero flex">
         <div class="hero__introduction">

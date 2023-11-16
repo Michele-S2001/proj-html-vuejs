@@ -13,7 +13,7 @@ export default {
 
 <template>
 
-  <section class="section section-padding">
+  <section class="section">
     <div class="container">
       <nav class="navbar flex justify-between">
 
