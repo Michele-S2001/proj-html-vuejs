@@ -1,4 +1,5 @@
 <script>
+import store from '../../store';
 import AppBanner from './AppBanner.vue';
 import AppCard from './AppCard.vue';
 
@@ -10,50 +11,33 @@ export default {
 
   data() {
     return {
-      movies: [
-        {
-          rating: 0,
-          title: 'Hurry animate blue strack new movie',
-          category: 'Top rating',
-          path: '../../../img/1.jpg',
-          views: 381
-        },
-        {
-          rating: 4,
-          title: 'Quisque auctor movie in strack',
-          category: 'Coming soon',
-          path: '../../../img/2.jpg',
-          views: 947
-        },
-        {
-          rating: 0,
-          title: 'New movie quisque in strack',
-          category: 'Latest movie',
-          path: '../../../img/5.jpg',
-          views: 721
-        },
-        {
-          rating: 0,
-          title: 'Hurry animate blue strack new movie',
-          category: 'Top rating',
-          path: '../../../img/1.jpg',
-          views: 381
-        },
-        {
-          rating: 4,
-          title: 'Quisque auctor movie in strack',
-          category: 'Coming soon',
-          path: '../../../img/2.jpg',
-          views: 947
-        },
-        {
-          rating: 0,
-          title: 'New movie quisque in strack',
-          category: 'Latest movie',
-          path: '../../../img/5.jpg',
-          views: 721
-        },
+      genrs: [
+        'All',
+        'Coming soon',
+        'Latest movie',
+        'Top rating',
+        'TV Series'
       ],
+      currIndex: 0,
+      activeCategory: 'All',
+      store,
+    }
+  },
+
+  methods: {
+    genrSelected(index, gen) {
+      this.currIndex = index;
+      this.activeCategory = gen;
+    }
+  },
+
+  computed: {
+    movies() {
+      if(this.activeCategory === 'All') {
+        return this.store.movies
+      } else {
+        return this.store.movies.filter(el => (el.category === this.activeCategory))
+      }
     }
   }
 }
@@ -65,11 +49,15 @@ export default {
     <div class="container">
       <AppBanner :text="'New movie'"/>
       <ul class="categories flex">
-        <li class="category show">All</li>
-        <li class="category">Coming soon</li>
-        <li class="category">Latest movie</li>
-        <li class="category">Top rating</li>
-        <li class="category">TV Series</li>
+        <li 
+          v-for="(genr, i) in genrs" 
+          :key="i" 
+          class="category"
+          :class="{show: i === currIndex}"
+          @click="genrSelected(i, genr)"
+        >
+          {{ genr }}
+        </li>
       </ul>
       <div class="movies-showcase grid">
         <AppCard class="card" v-for="(movie, i) in movies" :key="i" :movie="movie" :round="false"/>
