@@ -93,13 +93,11 @@ export default {
         &__stats {
           font-size: 15px;
           .more {
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
+            border-radius: 0 20px 20px 0;
           }
 
           .views {
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
+            border-radius: 20px 0 0 20px;
           }
 
           span {
