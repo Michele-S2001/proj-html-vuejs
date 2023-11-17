@@ -11,7 +11,7 @@ export default {
 
   data() {
     return {
-      genrs: [
+      genres: [
         'All',
         'Coming soon',
         'Latest movie',
@@ -25,7 +25,7 @@ export default {
   },
 
   methods: {
-    genrSelected(index, gen) {
+    genreSelected(index, gen) {
       this.currIndex = index;
       this.activeCategory = gen;
     }
@@ -50,13 +50,13 @@ export default {
       <AppBanner :text="'New movie'"/>
       <ul class="categories flex">
         <li 
-          v-for="(genr, i) in genrs" 
+          v-for="(genre, i) in genres" 
           :key="i" 
           class="category"
           :class="{show: i === currIndex}"
-          @click="genrSelected(i, genr)"
+          @click="genreSelected(i, genre)"
         >
-          {{ genr }}
+          {{ genre }}
         </li>
       </ul>
       <div class="movies-showcase grid">
