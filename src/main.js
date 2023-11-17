@@ -18,7 +18,8 @@ import {
   faBasketShopping,
   faCaretDown,
   faLeftLong,
-  faRightLong
+  faRightLong,
+  faAngleUp
  } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 /* add icons to the library */
@@ -34,7 +35,8 @@ library.add(
   faCaretDown,
   faLeftLong,
   faRightLong,
-  faPinterest
+  faPinterest,
+  faAngleUp
 )
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
