@@ -10,7 +10,8 @@ import {
   faLinkedinIn, 
   faInstagram,
   faGooglePlusG,
-  faPinterest
+  faPinterest,
+  faYoutube
  } from '@fortawesome/free-brands-svg-icons'
 
 import { 
@@ -19,7 +20,9 @@ import {
   faCaretDown,
   faLeftLong,
   faRightLong,
-  faAngleUp
+  faAngleUp,
+  faShare,
+  faClock
  } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 /* add icons to the library */
@@ -36,7 +39,10 @@ library.add(
   faLeftLong,
   faRightLong,
   faPinterest,
-  faAngleUp
+  faAngleUp,
+  faShare,
+  faClock,
+  faYoutube
 )
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
