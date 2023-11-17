@@ -14,24 +14,29 @@ export default {
     return {
       mainNews: {
         title: 'lorem ipsum dolor ment upsim calor',
-        path: '../../../img/blog-570x570.jpg'
+        path: '../../../img/blog-570x570.jpg',
+        release: 'February 28, 2021'
       },
       news: [
         {
           title: 'lorem ipsum dolor ment upsim calor',
-          path: '../../../img/blog2-300x300.jpg'
+          path: '../../../img/blog2-300x300.jpg',
+          release: 'April 12, 2023'
         },
         {
           title: 'lorem ipsum dolor ment upsim calor',
-          path: '../../../img/blog3-300x300.jpg'
+          path: '../../../img/blog3-300x300.jpg',
+          release: 'Semptember 24, 2022'
         },
         {
           title: 'lorem ipsum dolor ment upsim calor',
-          path: '../../../img/blog4-300x300.jpg'
+          path: '../../../img/blog4-300x300.jpg',
+          release: 'August 2, 2023'
         },
         {
           title: 'lorem ipsum dolor ment upsim calor',
-          path: '../../../img/blog5-300x300.jpg'
+          path: '../../../img/blog5-300x300.jpg',
+          release: 'March 30, 2019'
         }
       ]
     }

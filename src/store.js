@@ -116,6 +116,50 @@ const store = reactive({
       text: 'Contacts Us',
       link: '#'
     },
+  ],
+  movies: [
+    {
+      rating: 0,
+      title: 'Hurry animate blue strack new movie',
+      category: 'Top rating',
+      path: '../../../img/1.jpg',
+      views: 381
+    },
+    {
+      rating: 4,
+      title: 'Quisque auctor movie in strack',
+      category: 'Coming soon',
+      path: '../../../img/2.jpg',
+      views: 947
+    },
+    {
+      rating: 0,
+      title: 'New movie quisque in strack',
+      category: 'Latest movie',
+      path: '../../../img/5.jpg',
+      views: 721
+    },
+    {
+      rating: 0,
+      title: 'Hurry animate blue strack new movie',
+      category: 'Top rating',
+      path: '../../../img/5.jpg',
+      views: 381
+    },
+    {
+      rating: 4,
+      title: 'Quisque auctor movie in strack',
+      category: 'TV Series',
+      path: '../../../img/2.jpg',
+      views: 947
+    },
+    {
+      rating: 0,
+      title: 'New movie quisque in strack',
+      category: 'Latest movie',
+      path: '../../../img/1.jpg',
+      views: 721
+    },
   ]
 });
 

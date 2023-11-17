@@ -1,4 +1,5 @@
 <script>
+import store from '../../store';
 import AppBanner from './AppBanner.vue';
 import AppCard from './AppCard.vue';
 
@@ -7,29 +8,6 @@ export default {
 
   data() {
     return {
-      movies: [
-        {
-          rating: 0,
-          title: 'Hurry animate blue strack new movie',
-          category: 'Top rating',
-          path: '../../../img/1.jpg',
-          views: 381
-        },
-        {
-          rating: 4,
-          title: 'Quisque auctor movie in strack',
-          category: 'Coming soon',
-          path: '../../../img/2.jpg',
-          views: 947
-        },
-        {
-          rating: 0,
-          title: 'New movie quisque in strack',
-          category: 'Latest movie',
-          path: '../../../img/5.jpg',
-          views: 721
-        },
-      ],
       currIndex: 1
     }
   },
@@ -47,6 +25,12 @@ export default {
       if(this.currIndex < 0) {
         this.currIndex = this.movies.length - 1
       }
+    }
+  },
+
+  computed: {
+    movies() {
+      return store.movies.slice(0, 3)
     }
   }
 }

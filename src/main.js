@@ -24,7 +24,7 @@ import {
   faShare,
   faClock
  } from '@fortawesome/free-solid-svg-icons'
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+import { faEnvelope, faCirclePlay } from '@fortawesome/free-regular-svg-icons'
 /* add icons to the library */
 library.add(
   faFacebookF, 
@@ -42,7 +42,8 @@ library.add(
   faAngleUp,
   faShare,
   faClock,
-  faYoutube
+  faYoutube,
+  faCirclePlay
 )
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

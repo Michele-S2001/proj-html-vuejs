@@ -69,6 +69,7 @@ section {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 30px;
+  grid-auto-rows: auto;
 }
 
 .flex-column {

@@ -14,7 +14,8 @@ export default {
 
   <div class="card">
     <img class="card__image" :src="item.path">
-    <div class="card__body flex flex-column">
+    <div class="card__body flex flex-column jusify-between">
+      <div class="time">{{ item.release }}</div>
       <div class="details">
         <div class="details__text">
           <h3>{{ item.title }}</h3>
@@ -50,6 +51,19 @@ export default {
 
     &:hover {
       background-image: linear-gradient(to bottom, rgba($green, 0.5), transparent);
+      & .time {
+        opacity: 1;
+      }
+    }
+    .time {
+      align-self: flex-end;
+      background-color: $green;
+      line-height: 30px;
+      padding-right: 5px;
+      padding-left: 20px;
+      border-radius: 20px 0 0 20px;
+      font-size: 14px;
+      opacity: 0;
     }
 
     .details {
