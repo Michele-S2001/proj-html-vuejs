@@ -7,6 +7,12 @@ export default {
     NavDropDown
   },
 
+  methods: {
+    hasProprety(object) {
+      return Object.hasOwn(object,"dropDownLinks")
+    }
+  },
+
   computed: {
     data() {
       return store.navData
@@ -26,10 +32,10 @@ export default {
           <li v-for="(item, i) in data" :key="i" class="nav-item">
             <a :href="item.link">{{ item.text }}</a>
             <font-awesome-icon 
-              class="arrow" v-if="i < 5" 
+              class="arrow" v-if="hasProprety(item)" 
               :icon="['fas', 'caret-down']"
             />
-            <NavDropDown :links="item.dropDownLinks" class="dropdown" v-if="i < 5"/>
+            <NavDropDown :links="item.dropDownLinks" class="dropdown" v-if="hasProprety(item)"/>
           </li>
         </ul>
 
